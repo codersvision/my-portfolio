@@ -1,0 +1,325 @@
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+.title-underline {
+  width: 5rem;
+  height: .2rem;
+  background-color: #AF0404;
+  margin: 0 auto 2rem;
+}
+.title-underline2 {
+  width: 15rem;
+  height: .2rem;
+  background-color: #AF0404;
+  margin: 0 auto 2rem;
+}
+
+/* Navigation Bar */
+.navbar-brand {
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-brand:hover {
+    text-shadow: .5px .5px 2px #FFF;
+}
+a .logo {
+    color: #AF0404!important;
+}
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .9rem;
+    background: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+.navbar-nav li {
+    padding-right: 2rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #AF0404;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FF0000;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FF0000;
+}
+/* Nav Animation */
+.navAnim a {
+    position: relative;
+    z-index: 0;
+}
+
+.brackets a:before,
+.brackets a:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.4rem;
+    top: 0px;
+    transition: all 0.3s;
+}
+.brackets a:before {
+    content: '<';
+    left: -12px;
+    transform: translateX(10px);
+}
+
+.brackets a:after {
+    content: '>';
+    right: -12px;
+    transform: translateX(-10px);
+}
+.brackets a:hover:before,
+.brackets a:hover:after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* Header */
+.video-background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.671);
+}  
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.89);
+}  
+.caption h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding: 0;
+}  
+.caption h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding: .1rem 25.3rem 1.6rem 0;
+    color: #FF0000;
+} 
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: .6rem 3rem;
+    margin-top: 20rem;
+    letter-spacing: .2rem;
+}
+
+/* ABOUT ME */
+.about-title {
+    margin: 4rem 0 6rem 0;
+    margin-top: 4rem;
+}
+#about {
+    height: 50rem;
+    background-color: #252525;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about-statement1 {
+    font-size: 2.3rem;
+}
+.about-statement2 {
+    font-size: 1.8rem;
+    line-height: 2.3;
+    color: rgba(255, 255, 255, 0.534);
+    /* padding: 0 30rem 0; */
+}
+
+/* Skills */
+.carousel {
+    background-color: black;
+    height: 600px;
+}
+img.carousel-img {
+    margin: 4rem 0 10rem 0;
+}
+.carousel-caption {
+    margin-top: 12rem;
+}
+
+/* CONTACT */
+#contact {
+    background-color: rgba(255, 255, 255, 0);
+}
+.contact-title {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 6rem;
+}
+.contact-info .fa {
+    padding-right: 1rem;
+}
+.contact-title h2 {
+    text-transform: uppercase;
+}
+p.contact-message {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+}
+#contact .container {
+    padding: 4rem 0 4rem 0;
+}
+.contact-info-title h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 3rem 19rem;
+}
+.contact-info2 p{
+    font-size: 1.4rem;
+}
+.contact-section3 {
+    margin: 3rem 0;
+}
+  #contact .form-control {
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}
+#contact .form-control:focus {
+    border-bottom-color: #999999;
+}
+#contact input {
+    height: 55px;
+}
+#contact button#submit {
+    background: #2b2b2b;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    height: 3rem;
+    margin-top: 2rem;
+}
+#contact button#submit:hover {
+    background: #FF0000;
+    color: #ffffff;
+}
+
+  /* FOOTER */
+footer .row {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+.footer-copyright {
+    color: #FFF;
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+}
+.social{
+    color: #FFF;
+    margin-top: 3rem;
+}
+footer a {
+    color: #AF0404;
+}
+footer a:hover {
+    color:#FF0000;
+}
+
+/**************************************************
+                MEDIA QUERIES
+***************************************************/
+
+/* Extra small devices (320 and up) */ 
+  @media (min-width: 320px) {
+      .caption h1 {
+          font-size: 1.7rem;
+      }
+      .caption h3 {
+          font-size: 1rem;
+          padding: .1rem 7.6rem 1.6rem 0;
+      }
+      .btn-lg {
+        border-width: medium;
+        border-radius: 0;
+        font-size: 1.1rem;
+        padding: .6rem 3rem;
+        margin-top: 10rem;
+        letter-spacing: .2rem;
+    }
+    .about-statement1 {
+        font-size: 1.7rem;
+    }
+    .about-statement2 {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+      .contact-info-title h2 {
+        margin: 1rem 0;
+      }
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .caption h1 {
+        font-size: 3.4rem;
+    }  
+    .caption h3 {
+        font-size: 2rem;
+        padding: .1rem 12.3rem 1.6rem 0;
+    } 
+    #contact button#submit {
+        margin: 3rem;
+      }
+    .contact-info-title h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 3rem 0rem;
+      }
+  }
+
+/* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .caption h1 {
+        font-size: 4.4rem;
+    }
+    .caption h3 {
+        font-size: 2.4rem;
+        padding: .1rem 16.4rem 1.6rem 0;
+    }   
+    .contact-info-title h2 {
+        padding: 0 auto;
+      }
+      #contact button#submit {
+        margin: 3rem 10rem;
+      }
+      .contact-section3 {
+        margin: 0 auto;
+    }
+  }
+
+/* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    
+    .contact-section3 {
+        margin: 5rem 0;
+    }
+    #contact button#submit {
+        margin: 2.5rem 0rem;
+    }
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      
+    }
