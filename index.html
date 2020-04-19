@@ -10,6 +10,7 @@
     <title>Leon Hinds | Front-End Web Developer</title>
     <meta name="author" content="Leon Hinds">
     <link rel="icon" href="/favicon (1).ico">
+    
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -148,12 +149,15 @@
 
                 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-4">
                     <div class="animated fadeInUp">
-                        <form id="contact-form" action="#" method="get">
+                        <form id="contact-form" action="contact.php" method="post">
                             <div class="col-sm-12 col-md-8 col-lg-12">
-                                <input type="text" class="form-control" name="name" placeholder="Name" required="">
+                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
                             </div>
                             <div class="col-sm-12 col-md-8 col-lg-12">
-                                <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                <input type="text" class="form-control" name="mail" placeholder="Your Email" required="">
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                             </div>
                             <div class="col-sm-12 col-md-8 col-lg-12">
                                 <textarea class="form-control" rows="5" name="message" placeholder="Message" required=""></textarea>
@@ -173,7 +177,7 @@
                         </div>
                         <div class="text-center contact-info2">
                                 <p><i class="fa fa-map-marker"></i> Atlanta, Ga</p>
-                                <p><i class="fa fa-comment"></i> <a href="mailto:leonhinds@gmail.com">leonhinds@gmail.com</a></p>
+                                <p><i class="fa fa-comment"></i> <a href="mailto:lhinds@gmail.com">lhinds@leonhinds.com</a></p>
                                 <p><i class="fa fa-phone"></i> 678-634-1777</p>
                         </div>
                     </div>
@@ -220,6 +224,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
     <script src="https://kit.fontawesome.com/ef675286e1.js" crossorigin="anonymous"></script>
- 
+    
 </body>
 </html>

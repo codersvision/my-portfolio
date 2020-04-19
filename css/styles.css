@@ -321,5 +321,8 @@ footer a:hover {
 
 /* Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {
-      
+        #about {
+            height: 30rem;
+
+        }
     }
